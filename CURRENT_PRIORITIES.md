@@ -1,18 +1,19 @@
 # Current Development Priorities for LN1 Legalese Node
 
-This document outlines the current development priorities for the LN1 Legalese Node project. It serves as a public guide for the DataHive development team, as well as current and prospective contractors.
-
+This document outlines the current development priorities for the LN1 Legalese Node project. It serves as a guide for the DataHive development team, current contractors, and prospective contractors.
 
 ## Primary Focus Areas
 
 1. Legal Data Indexing and Curation System
-2. Blockchain Integration
-3. Performance Optimization
+2. Node Operations
+3. Blockchain Integration
+4. Performance Optimization
 
 ## 1. Legal Data Indexing and Curation System
 
-Our main priority for LN1 is establishing the foundational infrastructure for web-based legal data indexing and curation. For detailed technical specifications and implementation details, see [LEGAL_DATA_SYSTEM.md](/docs/technical/LEGAL_DATA_SYSTEM.md). This includes:
+Our main priority for LN1 is establishing the foundational infrastructure for web-based legal data indexing and curation. For detailed technical specifications and implementation details, see [LEGAL_DATA_SYSTEM.md](/docs/technical/LEGAL_DATA_SYSTEM.md).
 
+### Core Focus:
 - Implementing efficient web scraping for:
   - Cookie policies
   - Privacy policies
@@ -30,7 +31,23 @@ Our main priority for LN1 is establishing the foundational infrastructure for we
 - Implement basic text processing functionality
 - Design APIs that support future NLP integration
 
-## 2. Blockchain Integration
+## 2. Node Operations
+
+Node operators play a crucial role in the LN1 ecosystem. For detailed technical specifications and operational guidelines, see [NODE_OPERATIONS.md](/docs/technical/NODE_OPERATIONS.md).
+
+### Node Responsibilities
+- Web content collection and processing
+- Data validation and quality assurance
+- Storage management and optimization
+- Performance monitoring and reporting
+
+### Node Coordination
+- Work distribution mechanisms
+- Inter-node communication
+- Resource sharing protocols
+- Quality control standards
+
+## 3. Blockchain Integration
 
 We aim to seamlessly integrate the indexing and curation system with our blockchain infrastructure. For detailed information about our testnet deployment, see [DataHive's Testnet1 Launch Announcement](https://www.datahive.network/post/datahive-launches-testnet1-on-op-sepolia-facilitated-by-altlayer-advancing-integration-with-0g-aios).
 
@@ -52,7 +69,7 @@ We aim to seamlessly integrate the indexing and curation system with our blockch
 - OP Sepolia testnet environment
 - DataHive's Testnet1 infrastructure
 
-## 3. Performance Optimization
+## 4. Performance Optimization
 
 Performance is our primary focus for LN1, taking precedence over advanced security features (which will be addressed in LN2):
 
@@ -70,6 +87,22 @@ Performance is our primary focus for LN1, taking precedence over advanced securi
 - API response times
 - Resource usage statistics
 
+## Community Development
+
+We actively support community developers building on the LN1 infrastructure:
+
+### Current Applications
+- Browser extensions for legal notice analysis
+- Legal research and comparison tools
+- Compliance monitoring solutions
+- Risk assessment platforms
+
+### Developer Resources
+- API documentation
+- Integration guides
+- Development tools
+- Community support channels
+
 ## Open Source Commitment
 
 We prioritize free and open-source resources across our stack:
@@ -86,4 +119,3 @@ While LN1 focuses on core infrastructure and performance, future versions (LN2-L
 - Additional storage integrations
 - Advanced ML/AI features
 
-This approach ensures we build a solid foundation in LN1 while maintaining extensibility for future enhancements.
