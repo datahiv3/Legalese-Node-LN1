@@ -35,7 +35,7 @@ Our main priority for LN1 is establishing the foundational infrastructure for we
 We aim to seamlessly integrate the indexing and curation system with our blockchain infrastructure. For detailed information about our testnet deployment, see [DataHive's Testnet1 Launch Announcement](https://www.datahive.network/post/datahive-launches-testnet1-on-op-sepolia-facilitated-by-altlayer-advancing-integration-with-0g-aios).
 
 ### Storage Strategy
-- Implementing 0G (Zero-Knowledge Proofs and Governance) as primary storage through AIOS integration
+- Implementing 0G as primary storage through AIOS integration
 - Utilizing OP Sepolia testnet infrastructure facilitated by AltLayer
 - Designing modular storage interfaces for future integrations (IPFS, etc.)
 - Optimizing data structures for efficient 0G integration
