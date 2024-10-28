@@ -1,6 +1,7 @@
 # Current Development Priorities for LN1 Legalese Node
 
-This document outlines the current development priorities for the LN1 Legalese Node project. It serves as a guide for our internal teams (NodeOps and P10) as well as prospective contractors.
+This document outlines the current development priorities for the LN1 Legalese Node project. It serves as a public guide for the DataHive development team, as well as current and prospective contractors.
+
 
 ## Primary Focus Areas
 
