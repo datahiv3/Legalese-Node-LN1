@@ -11,7 +11,7 @@ This document outlines the current development priorities for the LN1 Legalese N
 
 ## 1. Legal Data Indexing and Curation System
 
-Our main priority for LN1 is establishing the foundational infrastructure for web-based legal data indexing and curation. This includes:
+Our main priority for LN1 is establishing the foundational infrastructure for web-based legal data indexing and curation. For detailed technical specifications and implementation details, see [LEGAL_DATA_SYSTEM.md](/docs/technical/LEGAL_DATA_SYSTEM.md). This includes:
 
 - Implementing efficient web scraping for:
   - Cookie policies
