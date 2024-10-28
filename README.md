@@ -1,5 +1,3 @@
-I'll help update the README.md with appropriate internal folder and file links based on the folder structure we established. Here's the updated version:
-
 # LN1 Legalese Node - Public Repository
 
 Welcome to the public repository for DataHive's LN1 Legalese Node. This repo contains open-source components and documentation for the legal data indexing and curation system powering the DataHive network.
