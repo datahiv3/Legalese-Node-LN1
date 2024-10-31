@@ -1,203 +1,161 @@
 # Legal Data System - LN1 Technical Specifications
 
 ## Overview
-This document provides technical specifications for the LN1 Legalese Node's web-based legal content collection and processing system.
+The LN1 Legal Data System implements automated collection, processing, and curation of legal documents through a distributed node network. This document outlines the technical specifications and core components of the system.
 
-## Core Components
+## System Architecture
 
-### 1. Web Content Collection
+### Core Components
+- Document Indexer (`/src/indexer`)
+- Data Curator (`/src/curator`)
+- Storage Manager (`/src/storage`)
+- API Interface (`/src/api`)
 
-#### Target Content
-- Cookie policies
-- Privacy policies
-- Terms of service
-- Legal notices
-- Website compliance documents
+For detailed architecture information, see [system-overview.md](/docs/architecture/system-overview.md).
 
-#### Collection Infrastructure
-- Distributed web crawling
-- URL management and tracking
-- Content change detection
-- Rate limiting and robots.txt compliance
-- Error handling and retry mechanisms
+## Indexing System
 
-### 2. Node Operations
-
-#### Node Delegation
-- Work distribution
-- Task allocation
-- Load balancing
-- Quality assurance
-
-#### Inter-Node Communication
-- Protocol specifications
-- Data sharing
-- Consensus mechanisms
-- Conflict resolution
-
-### 3. Blockchain Integration
-
-#### Storage Strategy
-- 0G (Zero-Knowledge Proofs and Governance) integration
-- Modular storage interfaces
-- Future platform compatibility (IPFS, etc.)
-- Data structure optimization
-
-#### Smart Contracts
-- Data integrity verification
-- Access control management
-- Node registry
-- Governance mechanisms
-
-### 4. Processing Pipeline
-
-#### Content Processing
-- HTML cleaning
-- Text normalization
+### Document Processor
+The document processing pipeline handles incoming legal documents through:
+- Content extraction and cleaning
 - Structure preservation
-- Metadata extraction
-
-#### Validation
-- Content verification
 - Format standardization
-- Quality checks
-- Compliance validation
+- Metadata generation
+
+Implementation details: [document_processor.rs](/src/indexer/document_processor.rs)
+
+### Metadata Extraction
+Automated extraction of:
+- Document type
+- Legal jurisdiction
+- Date information
+- Key entities
+- Reference numbers
+
+Implementation details: [metadata_extractor.rs](/src/indexer/metadata_extractor.rs)
+
+### Quality Validation
+Document validation includes:
+- Content authenticity checks
+- Format verification
+- Completeness assessment
+- Duplicate detection
+
+Implementation details: [quality_validator.rs](/src/indexer/quality_validator.rs)
+
+## Curation System
+
+### Validation Engine
+Multi-stage validation process:
+- Initial automated checks
+- Node consensus validation
+- Quality scoring
+- Version control
+
+Implementation details: [validation_engine.rs](/src/curator/validation_engine.rs)
+
+### Consensus Management
+Distributed validation through:
+- Multi-node verification
+- Voting mechanisms
+- Conflict resolution
+- Update propagation
+
+Implementation details: [consensus_manager.rs](/src/curator/consensus_manager.rs)
+
+### Reward Calculator
+DH token distribution based on:
+- Contribution quality
+- Validation participation
+- Node reputation
+- Network metrics
+
+Implementation details: [reward_calculator.rs](/src/curator/reward_calculator.rs)
+
+## Data Sources
+
+### Primary Sources
+1. Web Scraping
+   - Government legal repositories
+   - Public legal databases
+   - Court websites
+   - Regulatory agency portals
+
+2. Open APIs
+   - Public legal data services
+   - Court record systems
+   - Regulatory databases
+
+For source configuration details, see [data-sources.md](/docs/technical/data-sources.md).
+
+## Storage System
+
+### 0G Network Integration
+- Distributed storage protocol
+- Data encryption
+- Access control
+- Version management
+
+For storage implementation details, see [storage-spec.md](/docs/technical/storage-spec.md).
 
 ## API Infrastructure
 
-### Core Node API
-Shared infrastructure used by all Legalese Nodes:
-
-#### Internal Endpoints
-- Node operations
+### Internal APIs
+- Node communication
 - Data synchronization
-- Health monitoring
 - Work distribution
+- Health monitoring
 
-#### External Developer API
-Public endpoints for community applications:
-- Browser extensions
-- Legal research platforms
-- Compliance tools
-- Analysis systems
+### External APIs
+- Document submission
+- Query interface
+- Validation status
+- Network statistics
+
+For complete API documentation, see [rest-api.md](/docs/api/rest-api.md).
+
+## Security
+
+### Data Protection
+- Encryption protocols
+- Access control
+- Audit logging
+- Privacy compliance
+
+For security specifications, see [audits.md](/docs/security/audits.md).
+
+## Node Operations
+
+### Operational Requirements
+- Hardware specifications
+- Network requirements
+- Storage capacity
+- Performance metrics
+
+For operational details, see [NODE_OPERATIONS.md](/docs/technical/NODE_OPERATIONS.md).
 
 ## Performance Optimization
 
 ### Priority Areas
-1. Collection Performance
-   - Parallel processing
-   - Resource management
-   - Network optimization
-   - Cache utilization
+1. Collection Efficiency
+2. Processing Speed
+3. Storage Operations
+4. Network Communication
 
-2. Storage Operations
-   - Read/write efficiency
-   - Query optimization
-   - Resource management
-   - Response times
-
-3. Node Communication
-   - Request handling
-   - Load balancing
-   - Connection pooling
-   - Resource allocation
-
-## Future Extensions (LN1.5)
-
-### Manual Content Submission
-- Text submission interface
-- Approval workflow
-- Quality control
-
-### UI/UX Content Capture
-- Screenshot submission
-- Mobile app integration
-- Interface documentation
+For optimization guidelines, see [performance.md](/docs/technical/performance.md).
 
 ## Development Guidelines
 
 ### Code Standards
-- Modular architecture
-- Clear separation of concerns
-- Consistent naming
+- Rust coding standards
 - Documentation requirements
+- Testing protocols
+- Review process
 
-### Testing Requirements
-- Unit testing
-- Integration testing
-- Performance testing
-- Load testing
+For contribution guidelines, see [CONTRIBUTING.md](/CONTRIBUTING.md).
 
-## Success Metrics
-
-### Performance Metrics
-- Collection success rate
-- Processing speed
-- Storage efficiency
-- API response times
-- Node coordination
-
-### Quality Metrics
-- Data accuracy
-- System reliability
-- Error rates
-- Resource utilization
-
-## Implementation Modules
-
-Each module can be developed independently and simultaneously, allowing for parallel development by different teams:
-
-### Module 1: Web Content Collection
-Responsibilities:
-- Implement distributed web scraping system
-- Manage URL collection and tracking
-- Handle content change detection
-- Implement rate limiting and compliance
-- Develop error handling mechanisms
-
-### Module 2: Node Operations
-Responsibilities:
-- Design node delegation system
-- Implement work distribution
-- Develop load balancing
-- Create quality assurance mechanisms
-- Build inter-node communication protocols
-
-### Module 3: Storage and Blockchain
-Responsibilities:
-- Implement 0G integration
-- Develop smart contracts
-- Create storage interfaces
-- Design data structures
-- Build platform compatibility layers
-
-### Module 4: Processing Pipeline
-Responsibilities:
-- Build content processing system
-- Implement validation checks
-- Create metadata extraction
-- Develop quality control
-- Design standardization processes
-
-### Module 5: API Infrastructure
-Responsibilities:
-- Develop core shared node API
-- Create external developer API
-- Build browser extension endpoints
-- Implement legal research endpoints
-- Design monitoring and analytics
-
-### Module 6: Performance Optimization
-Responsibilities:
-- Optimize collection speed
-- Improve storage operations
-- Enhance node communication
-- Refine processing efficiency
-- Monitor and tune system performance
-
-Each module includes:
-- Independent testing frameworks
-- Documentation requirements
-- Performance metrics
-- Integration points
-- Success criteria
+## Related Documentation
+- [Installation Guide](/docs/deployment/installation.md)
+- [Troubleshooting Guide](/docs/guides/troubleshooting.md)
+- [API Documentation](/docs/api/rest-api.md)
+- [Security Audit](/docs/security/audits.md)
