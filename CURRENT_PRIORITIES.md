@@ -47,6 +47,12 @@ Node operators play a crucial role in the LN1 ecosystem. For detailed technical 
 - Resource sharing protocols
 - Quality control standards
 
+### Node Requirements
+- Minimum hardware specifications for optimal performance
+- Network bandwidth recommendations
+- Storage capacity guidelines
+For detailed hardware specifications, see [NODE_OPERATIONS.md](/docs/technical/NODE_OPERATIONS.md).
+
 ## 3. Blockchain Integration
 
 We aim to seamlessly integrate the indexing and curation system with our blockchain infrastructure. For detailed information about our testnet deployment, see [DataHive's Testnet1 Launch Announcement](https://www.datahive.network/post/datahive-launches-testnet1-on-op-sepolia-facilitated-by-altlayer-advancing-integration-with-0g-aios).
