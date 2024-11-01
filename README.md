@@ -7,7 +7,7 @@
 > Transform legal data processing with cutting-edge decentralized technology. LN1 is not just another indexing system - it's a revolutionary approach to legal intelligence powered by DataHive's decentralized network.
 
 [![GitHub license](https://img.shields.io/github/license/datahiv3/Legalese-Node-LN1)](LICENSE)
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID)](https://discord.gg/yourdiscord)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive_Official-blue?logo=telegram)](https://t.me/datahiveofficial)
 [![Twitter Follow](https://img.shields.io/twitter/follow/GetDataHive?style=social)](https://twitter.com/GetDataHive)
 
 ## 🚀 Why LN1?
