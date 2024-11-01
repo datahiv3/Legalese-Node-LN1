@@ -6,10 +6,16 @@ The LN1 platform implements a distributed architecture for legal document proces
 
 ## Core Components
 
+<p align="center">
+  <img src="..\images\AgenticLayer.png" alt="LN1 Agent Layer Architecture" width="600">
+</p>
+
 ### Node Types
 
+The LN1 system implements several functional node types that handle different aspects of document processing. These are distinct from DataHive's specialized nodes (like Legalese Node, Consent Node, etc.) and represent the core processing components within each specialized node:
+
 ```typescript
-interface NodeTypes {
+interface ProcessingNodeTypes {
     INDEXER: 'Processes and catalogs legal documents',
     VALIDATOR: 'Validates document integrity and content',
     CURATOR: 'Manages document lifecycle and quality',
