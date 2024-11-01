@@ -20,7 +20,7 @@ interface NodeTypes {
 ### Component Interaction
 
 <p align="center">
-  <img src="docs/images/NodeTypes.png" alt="Node Types" width="600">
+  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/2d3116a8108a2141fded9695ffdaf766d0299ae4/docs/images/NodeTypes.png" alt="Node Types" width="600">
 </p>
 
 ## System Layers
