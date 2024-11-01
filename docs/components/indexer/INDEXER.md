@@ -3,7 +3,7 @@
 > Building the foundation for decentralized legal intelligence. Track our progress on our [public project board](https://github.com/orgs/datahiv3/projects/3).
 
 <p align="center">
-  <img src="docs\images\LN1.png" alt="LN1 Architecture" width="600">
+  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/8c08a48190aeb66b5ab916274d5289f1a915d01f/docs/images/LN1.png" alt="LN1 Architecture" width="600">
 </p>
 
 ## Overview
