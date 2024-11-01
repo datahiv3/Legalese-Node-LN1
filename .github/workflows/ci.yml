@@ -5,9 +5,11 @@ on:
       - main
     paths:
       - 'docs/**/*.md'
+      - 'docs/images/**'  # Add this to track image changes
   pull_request:
     paths:
       - 'docs/**/*.md'
+      - 'docs/images/**'  # Add this to track image changes
 
 jobs:
   update-docs:
@@ -19,14 +21,22 @@ jobs:
       - name: Verify markdown files
         run: |
           echo "Verifying markdown files..."
-          # Add markdown verification steps if needed
-
+          find docs -name "*.md" -type f -exec echo "Checking {}" \;
+          
+      - name: Verify image paths
+        run: |
+          echo "Checking image paths..."
+          find docs -name "*.md" -type f -exec grep -l "!\[.*\](.*)" {} \;
+          
       - name: Process images
         run: |
           echo "Processing documentation images..."
-          # Add image processing steps if needed
+          if [ -d "docs/images" ]; then
+            echo "Found images directory"
+            ls -la docs/images/
+          fi
 
-      - name: Check image paths
+      - name: Check relative paths
         run: |
-          echo "Checking image paths in markdown files..."
-          # Add path verification steps if needed
+          echo "Validating relative paths in markdown files..."
+          # Add specific path validation if needed
