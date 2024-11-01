@@ -20,7 +20,7 @@ interface NodeTypes {
 ### Component Interaction
 
 <p align="center">
-  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/2d3116a8108a2141fded9695ffdaf766d0299ae4/docs/images/NodeTypes.png" alt="Node Types" width="600">
+  <img src="../images/NodeTypes.png" alt="Node Types" width="600">
 </p>
 
 ## System Layers
@@ -69,7 +69,7 @@ class ProcessingPipeline:
 ### Node Clustering
 
 <p align="center">
-  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/651c802611c24789e6c26d020d444099f635122b/docs/images/NodeClusters.png" alt="Node Clusters" width="600">
+  <img src="../images/NodeClusters.png" alt="Node Clusters" width="600">
 </p>
 
 ### Storage Architecture
@@ -150,7 +150,7 @@ interface APIEndpoints {
 ## Data Flow
 
 <p align="center">
-  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/651c802611c24789e6c26d020d444099f635122b/docs/images/ConsentedData.png" alt="Data Flow" width="600">
+  <img src="../images/ConsentedData.png" alt="Data Flow" width="600">
 </p>
 
 ### Processing Pipeline
