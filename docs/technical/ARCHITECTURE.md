@@ -69,7 +69,7 @@ class ProcessingPipeline:
 ### Node Clustering
 
 <p align="center">
-  <img src="docs/images/NodeClusters.png" alt="Node Clusters" width="600">
+  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/651c802611c24789e6c26d020d444099f635122b/docs/images/NodeClusters.png" alt="Node Clusters" width="600">
 </p>
 
 ### Storage Architecture
@@ -150,7 +150,7 @@ interface APIEndpoints {
 ## Data Flow
 
 <p align="center">
-  <img src="docs/images/ConsentedData.png" alt="Data Flow" width="600">
+  <img src="https://github.com/datahiv3/Legalese-Node-LN1/blob/651c802611c24789e6c26d020d444099f635122b/docs/images/ConsentedData.png" alt="Data Flow" width="600">
 </p>
 
 ### Processing Pipeline
