@@ -1,5 +1,5 @@
 # This file must be used with "source bin/activate" *from bash*
-# You cannot run it directly
+# you cannot run it directly
 
 deactivate () {
     # reset old environment variables
@@ -35,15 +35,8 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-# on Windows, a path can contain colons and backslashes and has to be converted:
-if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
-    # transform D:\path\to\venv to /d/path/to/venv on MSYS
-    # and to /cygdrive/d/path/to/venv on Cygwin
-    export VIRTUAL_ENV=$(cygpath "C:\Users\rolod\OneDrive\Documents\GitHub\ln1-public\venv")
-else
-    # use the path as-is
-    export VIRTUAL_ENV="C:\Users\rolod\OneDrive\Documents\GitHub\ln1-public\venv"
-fi
+VIRTUAL_ENV="C:\Users\rolod\OneDrive\Documents\GitHub\ln1-public\venv"
+export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
 PATH="$VIRTUAL_ENV/Scripts:$PATH"

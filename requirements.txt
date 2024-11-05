@@ -1,0 +1,31 @@
+
+# Core Dependencies
+fastapi>=0.68.0
+uvicorn>=0.15.0
+python-dotenv>=0.19.0
+pydantic>=1.8.2
+
+# Blockchain & Web3
+web3>=6.0.0
+eth-brownie>=1.19.0
+eth-utils>=2.1.0
+
+# AI & ML (CPU versions)
+torch==2.0.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+spacy>=3.5.0
+
+# Storage & Database
+redis>=4.5.4
+psycopg2-binary>=2.9.6
+ipfshttpclient>=0.8.0
+
+# Testing & Development
+pytest>=7.3.1
+pytest-cov>=4.0.0
+black>=22.3.0
+pylint>=2.15.0
+
+# Legal NLP
+lexnlp>=2.3.0
