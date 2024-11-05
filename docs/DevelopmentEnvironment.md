@@ -1,6 +1,6 @@
-# DataHive LN1 Node Development Environment
+# LN1 Development Environment
 
-Complete development environment setup for the DataHive LN1 Node, covering infrastructure, protocol, and AI components. For detailed system architecture, see [ARCHITECTURE.md](./docs/architecture/system-overview.md).
+Complete development environment setup for the DataHive LN1 Node, covering infrastructure, protocol, and AI components. For detailed system architecture, see [system-overview.md](./docs/architecture/system-overview.md).
 
 ## System Requirements
 
@@ -15,10 +15,6 @@ Complete development environment setup for the DataHive LN1 Node, covering infra
 - [Ubuntu 22.04 LTS](https://ubuntu.com/download/desktop) (primary recommended)
 - [macOS 12+ Monterey or later](https://support.apple.com/macos) (supported)
 - [Windows 11 with WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) (supported)
-
-#### Installation Guides
-- [Ubuntu 22.04 LTS Installation Guide](https://ubuntu.com/tutorials/install-ubuntu-desktop)
-- [WSL2 Setup Guide](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ## Core Development Stack
 
@@ -43,7 +39,7 @@ wget https://go.dev/dl/go1.21.1.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
 ```
 
-For detailed language-specific setup, see [LANGUAGES.md](./docs/setup/LANGUAGES.md)
+For detailed language-specific setup, see [LANGUAGES.md](./docs/architecture/setup/LANGUAGES.md)
 
 ### Blockchain Development Tools
 ```bash
@@ -61,7 +57,7 @@ cargo install foundry-rs
 npm install -g ganache
 ```
 
-For blockchain configuration details, see [BLOCKCHAIN.md](./docs/setup/BLOCKCHAIN.md)
+For blockchain configuration details, see [BLOCKCHAIN.md](./docs/architecture/setup/BLOCKCHAIN.md)
 
 ### AI & Machine Learning Stack
 ```bash
@@ -77,9 +73,9 @@ python -m spacy download en_legal_ner
 pip install lexnlp
 ```
 
-For AI model setup details, see [AI_SETUP.md](./docs/setup/AI_SETUP.md)
+For AI model setup details, see [AI_SETUP.md](./docs/architecture/setup/AI_SETUP.md)
 
-### Database & Storage
+### Storage & Database
 ```bash
 # Core Database
 sudo apt install postgresql postgresql-contrib
@@ -88,6 +84,9 @@ sudo apt install redis-server
 # IPFS & Storage
 wget https://dist.ipfs.tech/kubo/v0.20.0/kubo_v0.20.0_linux-amd64.tar.gz
 tar -xvzf kubo_v0.20.0_linux-amd64.tar.gz
+
+# 0G Storage Integration
+npm install @0glabs/0g-storage-client
 ```
 
 ## Development Environment Setup
@@ -152,7 +151,26 @@ volumes:
   postgres_data:
 ```
 
-### 4. IDE Configuration
+### 4. Network Configuration
+
+#### OP Sepolia Setup
+```yaml
+networks:
+  op_sepolia:
+    rpc_url: "https://sepolia-sequencer.optimism.io"
+    chain_id: 11155420
+    explorer: "https://sepolia-optimism.etherscan.io"
+```
+
+#### AltLayer Configuration
+```yaml
+networks:
+  altlayer:
+    rpc_url: "${ALTLAYER_RPC_URL}"
+    chain_id: "${ALTLAYER_CHAIN_ID}"
+```
+
+### 5. IDE Configuration
 
 #### VS Code Setup
 ```json
@@ -170,7 +188,7 @@ volumes:
 }
 ```
 
-For detailed IDE setup, see [IDE_SETUP.md](./docs/setup/IDE_SETUP.md)
+For detailed IDE setup, see [SETUP.md](./docs/guidelines/infrastructure/SETUP.md)
 
 ## Development Workflow
 
@@ -200,21 +218,21 @@ pytest tests/storage/
 pytest --cov=app --cov-report=html
 ```
 
-## Additional Resources
+## Documentation Resources
 
-### Documentation
+### Core Documentation
 - [API Documentation](./docs/api/API.md)
-- [Protocol Specification](./docs/protocol/SPEC.md)
-- [Security Guidelines](./docs/security/SECURITY.md)
-- [Contributing Guide](./docs/CONTRIBUTING.md)
+- [Protocol Specification](./docs/api/SPEC.md)
+- [Security Guidelines](./docs/guidelines/infrastructure/SECURITY.md)
+- [Contributing Guide](./docs/guidelines/CONTRIBUTING.md)
 
-## Support Channels
-- [GitHub Issues](https://github.com/datahiv3/Legalese-Node-LN1/issues) - Bug reports and feature requests
-- [Development Discussions](https://github.com/datahiv3/Legalese-Node-LN1/discussions) - Technical discussions and community chat
-- [Technical Documentation](./docs/README.md) - Comprehensive development guides
-
-## Related Components
-- [Core Protocol Architecture](./docs/architecture/PROTOCOL.md)
-- [Legal Intelligence Model](./docs/ai/LEGAL_AI.md)
-- [Storage System](./docs/storage/STORAGE.md)
+### Component Documentation
+- [Core Protocol Architecture](./docs/architecture/DEVELOPMENT.md)
+- [Legal Intelligence Model](./docs/components/CURATOR.md)
+- [Storage System](./docs/0g/STORAGE.md)
 - [Node Operations](./docs/deployment/NODE_OPERATIONS.md)
+
+## Support & Community
+- [GitHub Issues](https://github.com/datahiv3/Legalese-Node-LN1/issues)
+- [Development Discussions](https://github.com/datahiv3/Legalese-Node-LN1/discussions)
+- [Technical Documentation](./docs/README.md)
