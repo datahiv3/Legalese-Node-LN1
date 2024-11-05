@@ -1,8 +1,12 @@
 # LN1 Infrastructure Setup Guide
 
-## System Requirements
+## Overview
 
-### Hardware Requirements
+This document provides detailed instructions for setting up the infrastructure required to run an LN1 node. It covers hardware configuration, software installation, network setup, and security measures.
+
+## Hardware Requirements
+
+### Minimum Specifications
 
 ```python
 class NodeRequirements:
@@ -28,25 +32,18 @@ class NodeRequirements:
     }
 ```
 
-### Network Requirements
+## Software Installation
 
-- Public IPv4 address
-- Open ports:
-  - 30303 (P2P)
-  - 8545 (RPC)
-  - 8546 (WebSocket)
-  - 9090 (Metrics)
+### Operating System Setup
 
-## Installation Steps
-
-### 1. Base System Setup
-
+1. **Install Ubuntu Server 20.04 LTS**
 ```bash
-# Update system
-sudo apt update && sudo apt upgrade -y
+# Update system packages
+sudo apt-get update
+sudo apt-get upgrade -y
 
-# Install dependencies
-sudo apt install -y \
+# Install essential packages
+sudo apt-get install -y \
     build-essential \
     curl \
     git \
@@ -55,7 +52,7 @@ sudo apt install -y \
     npm
 ```
 
-### 2. Docker Installation
+### Docker Installation
 
 ```bash
 # Install Docker
@@ -67,106 +64,75 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.0/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-### 3. Node Setup
+## Network Configuration
+
+### Firewall Setup
 
 ```bash
-# Clone repository
-git clone https://github.com/datahiv3/Legalese-Node-LN1.git
-cd Legalese-Node-LN1
-
-# Create directories
-mkdir -p data/{storage,logs,config}
-
-# Set permissions
-sudo chown -R $USER:$USER data/
+# Configure UFW
+sudo ufw allow 30303/tcp  # P2P communication
+sudo ufw allow 8545/tcp   # RPC endpoint
+sudo ufw allow 8546/tcp   # WebSocket
+sudo ufw allow 9090/tcp   # Metrics
+sudo ufw enable
 ```
-
-## Configuration
-
-### Environment Setup
-
-```bash
-# Copy example configuration
-cp config/example.env .env
-
-# Edit configuration
-nano .env
-
-# Required variables
-NODE_ID=your_node_id
-NETWORK=testnet
-RPC_ENDPOINT=https://sepolia.optimism.io
-API_KEY=your_api_key
-```
-
-### Network Configuration
-
-```python
-class NetworkConfig:
-    def __init__(self):
-        self.network_params = {
-            'chain_id': 11155420,  # OP Sepolia
-            'p2p_port': 30303,
-            'rpc_port': 8545,
-            'ws_port': 8546,
-            'metrics_port': 9090
-        }
-```
-
-## Security Setup
 
 ### SSL/TLS Configuration
 
 ```bash
 # Generate SSL certificate
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-    -keyout config/ssl/private.key \
-    -out config/ssl/certificate.crt
+    -keyout /etc/ln1/ssl/private.key \
+    -out /etc/ln1/ssl/certificate.crt
 ```
 
-### Firewall Setup
+## Container Setup
 
-```bash
-# Configure UFW
-sudo ufw allow 30303/tcp
-sudo ufw allow 8545/tcp
-sudo ufw allow 8546/tcp
-sudo ufw allow 9090/tcp
-sudo ufw enable
-```
-
-## Container Deployment
-
-### Docker Compose Configuration
+### Docker Network
 
 ```yaml
+# docker-compose.yml
 version: '3.8'
 services:
   ln1_node:
     build:
       context: .
       dockerfile: Dockerfile
+    networks:
+      - ln1_network
     volumes:
-      - ./data:/data
-      - ./config:/config
+      - node_data:/data
+      - node_config:/config
     ports:
       - "8545:8545"
       - "8546:8546"
       - "30303:30303"
-      - "9090:9090"
-    environment:
-      - NODE_ENV=production
-    restart: unless-stopped
+
+networks:
+  ln1_network:
+    driver: bridge
+
+volumes:
+  node_data:
+  node_config:
 ```
 
-### Start Services
+## Security Configuration
 
-```bash
-# Build and start containers
-docker-compose up -d
+### Access Control
 
-# Check logs
-docker-compose logs -f
+```python
+class SecurityConfig:
+    def __init__(self):
+        self.auth_config = {
+            'jwt_expiry': '1h',
+            'api_key_rotation': '90d',
+            'allowed_ips': [],
+            'rate_limit': {
+                'requests_per_minute': 60,
+                'burst': 100
+            }
+        }
 ```
 
 ## Monitoring Setup
@@ -187,82 +153,98 @@ scrape_configs:
 ### Grafana Setup
 
 ```bash
+# Install Grafana
 docker run -d \
   -p 3000:3000 \
   --name grafana \
   grafana/grafana
 ```
 
-## Post-Installation
+## Storage Configuration
 
-### Health Check
+### 0G Network Integration
 
 ```python
-class HealthChecker:
-    async def verify_installation(self):
-        return {
-            'node_status': self.check_node_status(),
-            'network_connection': self.verify_network(),
-            'storage_access': self.check_storage(),
-            'api_availability': self.verify_api()
+class StorageConfig:
+    def __init__(self):
+        self.storage_config = {
+            'replication_factor': 3,
+            'shard_size': '64MB',
+            'cache_size': '10GB',
+            'compression': 'enabled'
         }
 ```
 
-### Backup Configuration
+## Node Initialization
+
+### Environment Setup
 
 ```bash
-# Create backup script
-cat > backup.sh << 'EOF'
+# Create required directories
+mkdir -p /data/ln1/{storage,logs,config}
+
+# Set permissions
+chown -R ln1:ln1 /data/ln1
+chmod 700 /data/ln1
+```
+
+### Configuration Files
+
+```python
+class NodeConfig:
+    def generate_config(self):
+        return {
+            'node_id': self.generate_node_id(),
+            'network': 'testnet',
+            'rpc_endpoint': 'https://sepolia.optimism.io',
+            'storage_path': '/data/ln1/storage',
+            'log_level': 'info'
+        }
+```
+
+## Health Checks
+
+### Monitoring Scripts
+
+```python
+class HealthChecker:
+    async def check_node_health(self):
+        return {
+            'network': self.check_network_connectivity(),
+            'storage': self.check_storage_status(),
+            'validation': self.check_validation_status(),
+            'consensus': self.check_consensus_participation()
+        }
+```
+
+## Backup Configuration
+
+### Automated Backups
+
+```bash
 #!/bin/bash
-backup_dir="/backup/ln1"
-mkdir -p $backup_dir
-tar -czf $backup_dir/config-$(date +%Y%m%d).tar.gz config/
-tar -czf $backup_dir/data-$(date +%Y%m%d).tar.gz data/
-EOF
+# backup-script.sh
 
-chmod +x backup.sh
+# Backup configuration
+tar -czf /backup/config-$(date +%Y%m%d).tar.gz /data/ln1/config
+
+# Backup essential data
+tar -czf /backup/data-$(date +%Y%m%d).tar.gz /data/ln1/storage
 ```
 
-## Troubleshooting
+## Post-Installation
 
-### Common Issues
+### Verification Steps
 
-1. **Connection Issues**
-   - Verify network configuration
-   - Check firewall settings
-   - Validate RPC endpoint
+1. Check node connectivity
+2. Verify storage integration
+3. Test API endpoints
+4. Monitor system metrics
+5. Validate security configurations
 
-2. **Storage Problems**
-   - Check disk space
-   - Verify permissions
-   - Validate mount points
+### Documentation Update
 
-### Logging
-
-```bash
-# View logs
-docker-compose logs -f
-
-# Export logs
-docker-compose logs > node_logs.txt
-```
-
-## Maintenance
-
-### Regular Tasks
-
-- Monitor system resources
-- Check log files
-- Update security patches
-- Backup configuration
-- Verify node status
-
-### Update Procedure
-
-```bash
-# Update repository
-git pull
-
-# Rebuild containers
-docker-compose build
-docker-compose up -d
+- Record all configuration changes
+- Update network diagrams
+- Document custom settings
+- Store backup verification results
