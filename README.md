@@ -1,7 +1,7 @@
 # LN1 Legalese Node: Legal Intelligence Layer for DataHive
 
 <p align="center">
-  <img src="docs/images/LNs.png" alt="LN1 Legalese Node" width="200"/>
+  <img src="docs/images/LNs.png" alt="LN1 Legalese Node" width="600"/>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -11,61 +11,89 @@
 [![Telegram](https://img.shields.io/badge/Telegram-Join%20Us-blue?logo=telegram)](https://t.me/datahiveofficial)
 [![Email](https://img.shields.io/badge/Email-team%40datahive.network-blue?logo=gmail)](mailto:team@datahive.network)
 
-## Legal Intelligence
+## Overview
 
-LN1 is the cornerstone of DataHive's legal intelligence infrastructure, transforming how legal knowledge is processed, validated, and distributed across the network. By combining advanced data models with decentralized validation, LN1 nodes create a robust foundation for privacy-preserving legal intelligence that works seamlessly with DataHive's on-device AI agents.
+LN1 Legalese Node is a core component of the DataHive network, providing decentralized legal data indexing, curation, and validation services. It forms the foundation of DataHive's Legal Intelligence Layer, enabling decentralized legal frameworks and transparent data governance across the network.
 
-## 🧠 Features
+## 🧠 Key Features
 
-- **Dynamic Legal Knowledge Models**: Continuously evolving data models that capture complex legal frameworks and precedents
-- **Real-time Legal Data Processing**: Automated indexing and classification of legal documents using advanced NLP
-- **Decentralized Validation**: Multi-node consensus ensuring accuracy and reliability of legal intelligence
+- **Legal Data Knowledge Models**: Collection and processing of legal documents and regulatory frameworks
+- **Real-time Processing Pipeline**: Automated indexing and classification using advanced NLP
+- **Decentralized Validation**: Multi-node consensus ensuring data accuracy and reliability
 - **Privacy-First Architecture**: Zero-knowledge proofs for sensitive legal data processing
-- **AI-Ready Data Structures**: Optimized for seamless integration with DataHive's on-device AI agents
+- **Cross-Chain Compatibility**: Seamless interaction with multiple blockchain networks
 
-## 🔄 How It Works
+## 🔄 Architecture
 
-#### Legal Knowledge Models
-- [Precedent Graphs](./docs/models/precedent-graphs.md)
-- [Regulatory Frameworks](./docs/models/regulatory-frameworks.md)
-- [Compliance Patterns](./docs/models/compliance-patterns.md)
+### Legal Knowledge Models
+- [Precedent Graphs](./docs/models/precedent-graphs.md) - Legal precedent analysis and mapping
+- [Regulatory Frameworks](./docs/models/regulatory-frameworks.md) - Compliance and regulatory structure
+- [Compliance Patterns](./docs/models/compliance-patterns.md) - Pattern detection and validation
 
-#### Data Processing Pipeline
-- [Document Indexer](./docs/pipeline/document-indexer.md)
-- [Pattern Recognition](./docs/pipeline/pattern-recognition.md)
-- [Validation Engine](./docs/pipeline/validation-engine.md)
+### Data Processing Pipeline
+- [Document Indexer](./docs/pipeline/document-indexer.md) - Automated legal document processing
+- [Pattern Recognition](./docs/pipeline/pattern-recognition.md) - AI-powered pattern analysis
+- [Validation Engine](./docs/pipeline/validation-engine.md) - Multi-node consensus validation
 
-#### AI Integration Layer
-- [Query Interface](./docs/ai/query-interface.md)
-- [Model Updates](./docs/ai/model-updates.md)
-- [Privacy Guards](./docs/ai/privacy-guards.md)
+### AI Integration Layer
+- [Query Interface](./docs/ai/query-interface.md) - Secure data querying protocol
+- [Model Updates](./docs/ai/model-updates.md) - Privacy-preserving model synchronization
+- [Privacy Guards](./docs/ai/privacy-guards.md) - Zero-knowledge computation framework
 
 ### Interaction with On-Device AI
+
 <p align="center">
-  <img src="docs\images\AgenticLayer.png" alt="LN1 Legalese Node" width="200"/>
+  <img src="docs/images/AgenticLayer.png" alt="Agentic Layer Interaction" width="800"/>
 </p>
+
 Your DataHive AI agent interacts with LN1 nodes to:
 - Access validated legal knowledge while maintaining privacy
 - Receive real-time updates to legal models
 - Contribute to network intelligence through privacy-preserving feedback loops
 - Execute compliant smart contracts and legal automation
 
-## 🚀 Getting Started
+## 🚀 Development
 
 ### Prerequisites
-
 ```bash
 node >= 16.0.0
 npm >= 8.0.0
 go >= 1.19
 ```
 
-### Quick Start
-
+### Installation
 ```bash
 git clone https://github.com/datahiv3/Legalese-Node-LN1.git
 cd Legalese-Node-LN1
 npm install
+```
+
+### Configuration
+```bash
+cp .env.example .env
+# Edit configuration settings
+```
+
+### Local Development
+```bash
+npm run dev
+```
+
+### Testing
+```bash
+npm run test
+```
+
+### Deployment
+
+#### Mainnet
+```bash
+npm run deploy:mainnet
+```
+
+#### Testnet
+```bash
+npm run deploy:testnet
 ```
 
 ## 📘 Documentation
@@ -77,20 +105,20 @@ npm install
 
 ## [🛣️ Roadmap](https://github.com/orgs/datahiv3/projects/3)
 
-**Phase 1: Core Intelligence**
-- Legal knowledge model implementation
-- Basic pattern recognition
-- Initial AI agent integration
+**Phase 1: Core Infrastructure Development**
+- Smart Contract Implementation
+- Basic Node Operations
+- Data Indexing System
 
-**Phase 2: Advanced Features**
-- Complex legal reasoning
-- Cross-jurisdictional analysis
-- Enhanced privacy features
+**Phase 2: Network Enhancement**
+- Multi-Node Validation
+- Cross-Chain Integration
+- Advanced Privacy Features
 
-**Phase 3: Network Scale**
-- Global legal framework support
-- Advanced AI capabilities
-- Enterprise integration
+**Phase 3: Ecosystem Expansion**
+- Global Framework Support
+- Advanced AI Capabilities
+- Enterprise Integration
 
 ## 🤝 Contributing
 
@@ -102,11 +130,4 @@ Security is crucial for legal data. For concerns, email [team@datahive.network](
 
 ## 📜 License
 
-MIT License - see [LICENSE](./LICENSE) for details.
-
-## 🌐 Connect With Us
-
-- [Website](https://datahive.network)
-- [Telegram](https://t.me/datahiveofficial)
-- [Twitter](https://twitter.com/getdatahive)
-- [Email](mailto:team@datahive.network)
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
