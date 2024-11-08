@@ -25,22 +25,20 @@ LN1 is the cornerstone of DataHive's legal intelligence infrastructure, transfor
 
 ## 🔄 How It Works
 
-### Legal Intelligence Layer
-```python
-LN1 Node
-├── Legal Knowledge Models
-│   ├── Precedent Graphs
-│   ├── Regulatory Frameworks
-│   └── Compliance Patterns
-├── Data Processing Pipeline
-│   ├── Document Indexer
-│   ├── Pattern Recognition
-│   └── Validation Engine
-└── AI Integration Layer
-    ├── Query Interface
-    ├── Model Updates
-    └── Privacy Guards
-```
+#### Legal Knowledge Models
+- [Precedent Graphs](./docs/models/precedent-graphs.md)
+- [Regulatory Frameworks](./docs/models/regulatory-frameworks.md)
+- [Compliance Patterns](./docs/models/compliance-patterns.md)
+
+#### Data Processing Pipeline
+- [Document Indexer](./docs/pipeline/document-indexer.md)
+- [Pattern Recognition](./docs/pipeline/pattern-recognition.md)
+- [Validation Engine](./docs/pipeline/validation-engine.md)
+
+#### AI Integration Layer
+- [Query Interface](./docs/ai/query-interface.md)
+- [Model Updates](./docs/ai/model-updates.md)
+- [Privacy Guards](./docs/ai/privacy-guards.md)
 
 ### Interaction with On-Device AI
 <p align="center">
