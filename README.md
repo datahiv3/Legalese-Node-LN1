@@ -1,4 +1,4 @@
-# LN1 Legalese Node: Legal Intelligence Layer for DataHive
+# DataHive's Legal Intelligence Layer
 
 <p align="center">
   <img src="docs/images/LNs.png" alt="LN1 Legalese Node" width="600"/>
