@@ -85,7 +85,7 @@ Track our indexer development progress on our [project board](https://github.com
 
 ## Contributing
 
-We welcome contributions! Check our [Contributing Guidelines](../../CONTRIBUTING.md) and current [Development Priorities](../../CURRENT_PRIORITIES.md).
+We welcome contributions! Check our [Contributing Guidelines](../../CONTRIBUTING.md) and current [Development Priorities](/CURRENT_PRIORITIES.md).
 
 ## Support & Resources
 - [Technical Documentation](/docs/technical/ARCHITECTURE.md)
