@@ -88,9 +88,9 @@ Track our indexer development progress on our [project board](https://github.com
 We welcome contributions! Check our [Contributing Guidelines](../../CONTRIBUTING.md) and current [Development Priorities](../../CURRENT_PRIORITIES.md).
 
 ## Support & Resources
-- [Technical Documentation](../../docs/technical/ARCHITECTURE.md)
-- [Development Guide](../../docs/DEVELOPMENT.md)
-- [Troubleshooting Guide](../../docs/guides/troubleshooting.md)
+- [Technical Documentation](/docs/technical/ARCHITECTURE.md)
+- [Development Guide](/docs/technical/DEVELOPMENT.md)
+- [Troubleshooting Guide](/docs/technical/troubleshooting.md)
 
 ## Stay Connected
 - Twitter: [@GetDataHive](https://twitter.com/GetDataHive)
