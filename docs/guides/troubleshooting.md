@@ -90,9 +90,9 @@ class ValidationTroubleshooter:
 
 ```solidity
 interface ErrorHandler {
-    function checkTransactionStatus(bytes32 txHash) 
-        external 
-        view 
+    function checkTransactionStatus(bytes32 txHash)
+        external
+        view
         returns (
             bool success,
             string memory errorMessage
@@ -184,16 +184,3 @@ class HealthChecker:
         }
 ```
 
-## Support Resources
-
-### Community Support
-- Discord community channel
-- GitHub issues
-- Technical documentation
-- Community forums
-
-### Enterprise Support
-- 24/7 technical support
-- Priority issue resolution
-- Direct access to development team
-- Custom solution development
