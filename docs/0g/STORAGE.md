@@ -1,7 +1,5 @@
 # 0G Network Storage Implementation
 
-## Overview
-
 This document outlines the storage architecture and implementation details for the 0G network integration within the LN1 node system. The storage layer handles distributed data persistence and retrieval across the network.
 
 ## Storage Architecture
@@ -92,10 +90,10 @@ class CacheManager:
     def __init__(self):
         self.memory_cache = LRUCache(1000)
         self.disk_cache = PersistentCache()
-        
+
     async def get_cached_document(self, doc_id):
         return (
-            await self.memory_cache.get(doc_id) or 
+            await self.memory_cache.get(doc_id) or
             await self.disk_cache.get(doc_id)
         )
 ```
@@ -114,10 +112,10 @@ class CacheManager:
 ```solidity
 contract StorageSecurity {
     mapping(bytes32 => bytes32) private encryptionKeys;
-    
-    function encryptDocument(bytes32 docHash, bytes memory content) 
-        private 
-        returns (bytes memory) 
+
+    function encryptDocument(bytes32 docHash, bytes memory content)
+        private
+        returns (bytes memory)
     {
         return performEncryption(content, encryptionKeys[docHash]);
     }

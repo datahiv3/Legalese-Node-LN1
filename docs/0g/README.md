@@ -1,7 +1,5 @@
 # 0G Network Integration
 
-## Overview
-
 This directory contains comprehensive documentation for integrating the LN1 node with the 0G network infrastructure. The documentation covers technical specifications, implementation details, and operational guidelines.
 
 ## Documentation Structure
