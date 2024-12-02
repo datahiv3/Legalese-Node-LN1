@@ -9,7 +9,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 [![Twitter Follow](https://img.shields.io/twitter/follow/getdatahive?style=social)](https://twitter.com/getdatahive)
 [![Telegram](https://img.shields.io/badge/Telegram-Join%20Us-blue?logo=telegram)](https://t.me/datahiveofficial)
-[![Email](https://img.shields.io/badge/Email-team%40datahive.network-blue?logo=gmail)](mailto:team@datahive.network)
+[![Email](https://img.shields.io/badge/Email-team%40datahive.network-blue?logo=gmail)](mailto:team@datahive.network) [![Documentation](https://img.shields.io/badge/docs-DRAFT_PORTAL-blue)](https://github.com/datahiv3/Legalese-Node-LN1/blob/main/docs/deployment/DRAFT_PORTAL.md)
 
 ## Overview
 
