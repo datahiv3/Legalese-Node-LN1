@@ -1,6 +1,6 @@
 # DataHive Node Portal - Draft Status
 
-**Important Notice**: The [DataHive node portal](./docs/deployment/DRAFT_PORTAL.md) (datahive.webflow.io/nodes) is currently in active development. The portal's content, functionality, and specifications are evolving in real-time, particularly during the initial [Legalese Node Version 1](./docs/nodes/LN1.md) (LN1) sale cycle.
+**Important Notice**: The [DataHive node portal](https://datahive.webflow.io/nodes) is currently in active development. The portal's content, functionality, and specifications are evolving in real-time, particularly during the initial [LN1](/docs/nodes/LN1.md) sale cycle.
 
 ![Draft of Node Portal](/docs/images/WalletLogin.png)
 
@@ -20,9 +20,9 @@ The portal will undergo significant updates throughout the [LN1 sale cycle](./do
 
 ## Portal Access
 
-Current staging portal: datahive.webflow.io/nodes
+Current staging portal: [datahive.webflow.io/nodes](https://datahive.webflow.io/nodes)
 
-*Note: All content and information presented on the portal is for illustrative purposes only and subject to change without prior notice. Operators should regularly check for updates during the LN1 sale cycle.*
+> *Note: All content and information presented on the portal is for illustrative purposes only and subject to change without prior notice. Operators should regularly check for updates during the LN1 sale cycle.*
 
 ## Core Components
 
