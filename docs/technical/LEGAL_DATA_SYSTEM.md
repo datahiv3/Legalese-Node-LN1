@@ -1,6 +1,5 @@
 # Legal Data System - LN1 Technical Specifications
 
-## Overview
 The LN1 Legal Data System implements automated collection, processing, and curation of legal documents through a distributed node network. This document outlines the technical specifications and core components of the system.
 
 ## System Architecture

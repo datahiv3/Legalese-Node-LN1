@@ -1,5 +1,4 @@
-# LN1: Building Our Network's Legal Intelligence
-
+# DataHive's Legal Intelligence
 
 <div align="center">
 
@@ -90,7 +89,7 @@ class ProcessingPipeline:
         self.indexer = DocumentIndexer()
         self.validator = ContentValidator()
         self.curator = DataCurator()
-        
+
     async def process_document(self, document):
         indexed = await self.indexer.process(document)
         validated = await self.validator.validate(indexed)
@@ -136,11 +135,11 @@ We've implemented state-of-the-art security measures:
 contract AccessControl {
     mapping(address => Role) public roles;
     mapping(bytes32 => mapping(Role => bool)) public permissions;
-    
-    function hasPermission(address user, bytes32 resource) 
-        public 
-        view 
-        returns (bool) 
+
+    function hasPermission(address user, bytes32 resource)
+        public
+        view
+        returns (bool)
     {
         return permissions[resource][roles[user]];
     }

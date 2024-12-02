@@ -1,6 +1,5 @@
 # Node Operations - LN1 Technical Specifications
 
-## Overview
 This document provides detailed technical specifications for LN1 Legalese Node operations, focusing on node responsibilities, coordination mechanisms, and performance requirements.
 
 ## Node Architecture
