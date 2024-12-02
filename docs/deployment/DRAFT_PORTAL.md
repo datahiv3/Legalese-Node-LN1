@@ -2,6 +2,8 @@
 
 **Important Notice**: The [DataHive node portal](./docs/deployment/DRAFT_PORTAL.md) (datahive.webflow.io/nodes) is currently in active development. The portal's content, functionality, and specifications are evolving in real-time, particularly during the initial [Legalese Node Version 1](./docs/nodes/LN1.md) (LN1) sale cycle.
 
+![Draft of Node Portal](/docs/images/WalletLogin.png)
+
 ## Dynamic Development
 - Portal features and functions are being rapidly iterated
 - Node specifications may be updated frequently
@@ -40,6 +42,8 @@ Current staging portal: datahive.webflow.io/nodes
 
 ### Node Types
 
+![Node Types](/docs/images/NodeTypes.png)
+
 | Type | Name | Function |
 |------|------|----------|
 | LN | [Legalese Nodes](./docs/nodes/LN1.md) | Maintain Legal Intelligence |
@@ -47,19 +51,19 @@ Current staging portal: datahive.webflow.io/nodes
 | DN | [Data Assetization Nodes](./docs/nodes/DATA.md) | Transform data into assets |
 | SN | [Securitization Nodes](./docs/nodes/SECURITY.md) | Securitize data assets |
 
-## Network Structure
+## [Network Structure](./docs/infrastructure/NETWORK.md)
 
-**Nucleus Formation**
-- Clusters of LN, CN, DN, and SN nodes
-- Handles sector-specific data management
-- Ensures comprehensive coverage of legal frameworks
-- Maintains data integrity and security
+**[Nucleus Formation](./docs/infrastructure/NUCLEUS.md)**
+- Clusters of [node types](./docs/nodes/CLUSTERS.md)
+- Handles [sector-specific data management](./docs/management/SECTORS.md)
+- Ensures [comprehensive coverage](./docs/legal/COVERAGE.md)
+- Maintains [data integrity](./docs/security/INTEGRITY.md)
 
-**Cluster Organization**
-- Multiple nuclei grouped by sector/institution
-- Specialized focus areas (e.g., academic data, enterprise compliance)
-- Scalable deployment model
-- Distributed processing architecture
+**[Cluster Organization](./docs/infrastructure/CLUSTERS.md)**
+- Multiple [nuclei grouped by sector](./docs/infrastructure/SECTORS.md)
+- [Specialized focus areas](./docs/infrastructure/SPECIALIZATION.md)
+- [Scalable deployment model](./docs/deployment/SCALING.md)
+- [Distributed processing architecture](./docs/architecture/DISTRIBUTED.md)
 
 ## Deployment Timeline
 
