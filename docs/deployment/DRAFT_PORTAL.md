@@ -1,20 +1,20 @@
 # DataHive Node Portal - Draft Status
 
-**Important Notice**: The DataHive node portal (datahive.webflow.io/nodes) is currently in active development. The portal's content, functionality, and specifications are evolving in real-time, particularly during the initial Legalese Node Version 1 (LN1) sale cycle.
+**Important Notice**: The [DataHive node portal](./docs/deployment/DRAFT_PORTAL.md) (datahive.webflow.io/nodes) is currently in active development. The portal's content, functionality, and specifications are evolving in real-time, particularly during the initial [Legalese Node Version 1](./docs/nodes/LN1.md) (LN1) sale cycle.
 
-**Dynamic Development**
+## Dynamic Development
 - Portal features and functions are being rapidly iterated
 - Node specifications may be updated frequently
 - Technical requirements could change as development progresses
 - Operator guidelines will evolve with network needs
 
 **LN1 Sale Cycle**
-The portal will undergo significant updates throughout the LN1 sale cycle to reflect:
-- Updated node requirements
-- Enhanced technical specifications
+The portal will undergo significant updates throughout the [LN1 sale cycle](./docs/deployment/NODE_OPERATIONS.md) to reflect:
+- Updated [node requirements](./docs/technical/ARCHITECTURE.md)
+- Enhanced [technical specifications](./docs/technical/DEVELOPMENT.md)
 - New operator guidelines
 - Revised participation frameworks
-- Additional deployment instructions
+- Additional [deployment instructions](./docs/deployment/installation.md)
 
 ## Portal Access
 
@@ -24,13 +24,13 @@ Current staging portal: datahive.webflow.io/nodes
 
 ## Core Components
 
-**Privacy AI Agent**
+### [Privacy AI Agent](./docs/ai/PRIVACY_AGENT.md)
 - Blocks unauthorized data surveillance
-- Implements predictive intent data analysis
-- Features context-aware consent engine
-- Enables zero-knowledge data exchanges
+- Implements [predictive intent data](./docs/ai/PATTERN_ANALYSIS.md) analysis
+- Features [context-aware consent engine](./docs/models/CONSENT_ENGINE.md)
+- Enables [zero-knowledge data exchanges](./docs/privacy/ZKP.md)
 
-**Agentic Commerce Layer**
+### [Agentic Commerce Layer](./docs/infrastructure/COMMERCE.md)
 - Facilitates high-frequency data analysis
 - Enables real-time algorithmic engagements
 - Enhances market efficiencies
@@ -42,10 +42,10 @@ Current staging portal: datahive.webflow.io/nodes
 
 | Type | Name | Function |
 |------|------|----------|
-| LN | Legalese Nodes | Maintain Legal Intelligence |
-| CN | Consent Nodes | Handle Consent Intelligence |
-| DN | Data Assetization Nodes | Transform data into assets |
-| SN | Securitization Nodes | Securitize data assets |
+| LN | [Legalese Nodes](./docs/nodes/LN1.md) | Maintain Legal Intelligence |
+| CN | [Consent Nodes](./docs/nodes/CONSENT.md) | Handle Consent Intelligence |
+| DN | [Data Assetization Nodes](./docs/nodes/DATA.md) | Transform data into assets |
+| SN | [Securitization Nodes](./docs/nodes/SECURITY.md) | Securitize data assets |
 
 ## Network Structure
 

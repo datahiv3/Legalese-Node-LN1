@@ -1,7 +1,5 @@
 # LN1 Node Operations Guide
 
-## Overview
-
 This document provides detailed operational procedures and guidelines for running an LN1 node on the DataHive network. It covers day-to-day operations, maintenance procedures, and troubleshooting guidelines.
 
 ## Node Configuration
