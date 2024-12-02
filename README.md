@@ -13,15 +13,17 @@
 
 ## Overview
 
-LN1 Legalese Node is a core component of the DataHive network, providing decentralized legal data indexing, curation, and validation services. It forms the foundation of DataHive's Legal Intelligence Layer, enabling decentralized legal frameworks and transparent data governance across the network.
+[LN1 Legalese Node](./docs/nodes/LN1.md) is a core component of the [DataHive network](./docs/infrastructure/NETWORK.md), providing [decentralized legal data indexing](./docs/pipeline/INDEXING.md), [curation](./docs/pipeline/CURATION.md), and [validation services](./docs/pipeline/VALIDATION.md). It forms the foundation of DataHive's [Legal Intelligence Layer](./docs/architecture/LEGAL_INTELLIGENCE.md), enabling [decentralized legal frameworks](./docs/legal/FRAMEWORKS.md) and [transparent data governance](./docs/governance/DATA_GOVERNANCE.md) across the network.
 
 ## 🧠 Key Features
 
-- **Legal Data Knowledge Models**: Collection and processing of legal documents and regulatory frameworks
-- **Real-time Processing Pipeline**: Automated indexing and classification using advanced NLP
-- **Decentralized Validation**: Multi-node consensus ensuring data accuracy and reliability
-- **Privacy-First Architecture**: Zero-knowledge proofs for sensitive legal data processing
-- **Cross-Chain Compatibility**: Seamless interaction with multiple blockchain networks
+- **[Legal Data Knowledge Models](./docs/models/KNOWLEDGE_MODELS.md)**: Collection and processing of legal documents and regulatory frameworks
+- **[Real-time Processing Pipeline](./docs/pipeline/PROCESSING.md)**: [Automated indexing](./docs/pipeline/INDEXING.md) and classification using advanced [NLP](./docs/ai/NLP.md)
+- **[Decentralized Validation](./docs/validation/CONSENSUS.md)**: Multi-node consensus ensuring data accuracy and reliability
+- **[Privacy-First Architecture](./docs/privacy/ARCHITECTURE.md)**: [Zero-knowledge proofs](./docs/privacy/ZKP.md) for sensitive legal data processing
+- **[Cross-Chain Compatibility](./docs/blockchain/CROSS_CHAIN.md)**: Seamless interaction with multiple blockchain networks
+
+> *Staging-draft of DataHive's LN1 portal can be viewed at [datahive.webflow.io/nodes](datahive.webflow.io/nodes). All content and information presented on the [staging portal](/docs/deployment/DRAFT_PORTAL.md) is for illustrative purposes only. The specifications, features, requirements, and implementation details are subject to change without prior notice.*
 
 ## 🔄 Architecture
 
@@ -46,11 +48,12 @@ LN1 Legalese Node is a core component of the DataHive network, providing decentr
   <img src="docs/images/AgenticLayer.png" alt="Agentic Layer Interaction" width="800"/>
 </p>
 
-Your DataHive AI agent interacts with LN1 nodes to:
-- Access validated legal knowledge while maintaining privacy
-- Receive real-time updates to legal models
-- Contribute to network intelligence through privacy-preserving feedback loops
-- Execute compliant smart contracts and legal automation
+Your [DataHive AI agent](./docs/ai/AGENT.md) interacts with [LN1 nodes](./docs/nodes/LN1.md) to:
+- Access [validated legal knowledge](./docs/validation/KNOWLEDGE.md) while maintaining privacy
+- Receive [real-time updates](./docs/updates/REALTIME.md) to legal models
+- Contribute to [network intelligence](./docs/ai/NETWORK_INTELLIGENCE.md) through privacy-preserving feedback loops
+- Execute [compliant smart contracts](./docs/smart-contracts/COMPLIANCE.md) and [legal automation](./docs/automation/LEGAL.md)
+
 
 ## 🚀 Development
 
