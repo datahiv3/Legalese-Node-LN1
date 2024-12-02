@@ -1,8 +1,8 @@
 # Legal Data Indexing
 
-## Overview
-
 The DataHive Legal Data Indexing system is a core component of the LN1 node that processes, categorizes, and indexes legal documents for the decentralized legal intelligence network.
+
+![LDI](/docs/images/LN1.png)
 
 ## Key Components
 

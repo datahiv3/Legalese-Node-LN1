@@ -2,6 +2,8 @@
 
 [LN1](/docs/nodes/LN1.md) (Legalese Node Version 1) represents the foundational node type in [DataHive's decentralized legal intelligence network](/docs/architecture/NETWORK.md). It serves as the primary interface for [legal data indexing](/docs/pipeline/INDEXING.md), [curation](/docs/pipeline/CURATION.md), and [validation](/docs/pipeline/VALIDATION.md).
 
+![LN1](/docs/images/LNs.png)
+
 ## Node Evolution
 
 ### [LN1](/docs/nodes/LN1.md)

@@ -1,7 +1,5 @@
 # DataHive Data Governance Framework
 
-## Overview
-
 The DataHive data governance framework establishes protocols and standards for managing legal data across the distributed network, ensuring compliance, quality, and ethical data handling practices.
 
 ## Core Components
