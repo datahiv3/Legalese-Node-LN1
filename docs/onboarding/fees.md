@@ -1,5 +1,11 @@
 # Node Operation Fees
 
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
+
 The DataHive network implements a tiered fee structure for [node operators](/docs/onboarding/nodes.md) based on node type and performance level. Each fee represents a one-year license issued as an NFT that requires annual renewal to maintain node operation rights.
 
 ## License NFT Structure
