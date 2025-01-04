@@ -1,5 +1,12 @@
 # Task Management System
 
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
+
+
 The DataHive network implements a sophisticated task distribution system for [node operators](/docs/onboarding/nodes.md) based on tier level, performance metrics, and hardware capabilities.
 
 ## Task Types
@@ -48,4 +55,3 @@ The DataHive network implements a sophisticated task distribution system for [no
 - Network contribution incentives
 
 *Note: Task allocation and rewards scale with node tier level and performance metrics. Higher-tier nodes receive more complex tasks and greater rewards.*
-
