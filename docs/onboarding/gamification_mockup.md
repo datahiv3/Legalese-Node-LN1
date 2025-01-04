@@ -1,4 +1,4 @@
-## Node Operator Performance Dashboard (Mockup)
+## Node Performance (Gamification Mockup)
 
 | Node ID | Tier | Performance Score | Network Rank | Weekly Tasks | Achievement Level |
 |---------|------|------------------|--------------|--------------|------------------|
