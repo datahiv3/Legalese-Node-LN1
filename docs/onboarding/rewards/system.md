@@ -2,7 +2,11 @@
 
 The DataHive network implements a robust reward system to incentivize node operators for their performance, contribution, and long-term commitment. This document provides an overview of the reward structure, eligibility criteria, and calculation methodology.
 
----
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
 
 ## Reward Components
 
@@ -23,7 +27,7 @@ The DataHive network implements a robust reward system to incentivize node opera
 5. **Network Contribution Multipliers**:
    - Nodes with high contribution scores receive reward multipliers to increase their earnings.
 
----
+![alt text](<My nodes (1).png>)
 
 ## Reward Eligibility
 

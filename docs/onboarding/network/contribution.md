@@ -2,7 +2,13 @@
 
 Network contribution is a key metric in the DataHive ecosystem, measuring the overall impact of a node operator's activity on the network's functionality, security, and growth. High contributions are rewarded with increased incentives, better ranking, and greater influence in governance.
 
----
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
+
+![alt text](<My nodes (1).png>)
 
 ## Core Elements of Network Contribution
 
@@ -27,8 +33,6 @@ Network contribution is a key metric in the DataHive ecosystem, measuring the ov
 
 6. **Data Integrity**:
    - Contributions to ensuring accurate, reliable, and tamper-proof data storage and processing.
-
----
 
 ## Contribution Scoring
 
