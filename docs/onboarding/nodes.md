@@ -1,5 +1,7 @@
 # Nodes
 
+![alt text](<Node specs-1.png>)
+
 [![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
 [![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
 [![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)

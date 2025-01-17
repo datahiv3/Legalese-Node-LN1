@@ -1,5 +1,13 @@
 # LN4 Node Requirements
 
+![alt text](<Node specs.png>)
+
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
+
 LN4 represents the highest tier level of the DataHive network, offering enterprise-grade capabilities and maximum rewards for [node operators](/docs/onboarding/nodes.md) managing high-performance infrastructure.
 
 ## Hardware Requirements
