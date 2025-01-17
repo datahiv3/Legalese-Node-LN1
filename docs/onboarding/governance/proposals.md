@@ -2,7 +2,11 @@
 
 Governance in the DataHive network is a decentralized and participatory process that allows node operators and stakeholders to propose, discuss, and vote on changes to the network. This guide provides an overview of how to create and manage governance proposals.
 
----
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
 
 ## Overview of Governance Proposals
 
@@ -21,7 +25,7 @@ Governance proposals enable:
    - Include supporting data and references where applicable.
 
 2. **Submission**:
-   - Submit the proposal through the [governance portal](https://www.datahive.network/governance).
+   - Submit the proposal through the [governance portal](https://www.datahive.network/nodes).
 
 3. **Review**:
    - The proposal is reviewed by the community for clarity, feasibility, and alignment with network goals.
@@ -50,7 +54,7 @@ Governance proposals enable:
    - Visual aids like charts or diagrams (optional).
 
 3. **Submit the Proposal**:
-   - Use the [proposal submission form](https://www.datahive.network/governance/submit).
+   - Use the [proposal submission form](https://www.datahive.network/nodes).
    - Ensure all required fields are completed.
 
 ---
@@ -87,7 +91,7 @@ Governance proposals enable:
 ## Monitoring Proposals
 
 1. **Dashboard Tracking**:
-   - View active and past proposals via the [governance dashboard](https://www.datahive.network/governance/dashboard).
+   - View active and past proposals via the [governance dashboard](https://www.datahive.network/governance/nodes).
 
 2. **Proposal Status**:
    - **Pending**: Under community review.
@@ -114,14 +118,7 @@ Governance proposals enable:
 4. **Monitor and Follow Up**:
    - Stay involved during the voting and implementation phases.
 
----
 
-## Additional Resources
-
-- [Proposal Submission Form](https://www.datahive.network/governance/submit)
-- [Governance Dashboard](https://www.datahive.network/governance/dashboard)
-- [Community Forums](/docs/onboarding/community/forums.md)
-- [Support Portal](/docs/onboarding/support/tickets.md)
 
 ---
 
