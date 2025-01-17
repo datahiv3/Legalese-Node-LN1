@@ -22,7 +22,7 @@ The forums are designed to:
 ## Accessing the Forums
 
 1. **Register**:
-   - Visit the [DataHive Community Forums](https://www.datahive.network/forums).
+   - Visit the [DataHive Community Forums](https://www.datahive.network/).
    - Create an account using your registered node operator credentials.
 
 2. **Login**:
