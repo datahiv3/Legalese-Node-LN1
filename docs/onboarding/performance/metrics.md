@@ -2,7 +2,11 @@
 
 The DataHive network uses a comprehensive performance evaluation system to ensure node operators maintain high standards in uptime, task completion, and network contribution. These metrics directly impact rewards, ranking, and tier upgrades.
 
----
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
 
 ## Key Metrics
 

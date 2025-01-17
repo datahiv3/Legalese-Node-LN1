@@ -2,7 +2,11 @@
 
 Legalese Nodes in the DataHive network are responsible for critical operations related to processing, validating, and managing legal data. These tasks ensure the integrity and compliance of the network's Legal Intelligence Layer. This document outlines the types of tasks assigned to Legalese Nodes and their performance metrics.
 
----
+[![Website](https://img.shields.io/badge/Register-DataHive_Nodes-blue)](https://www.datahive.network/nodes)
+[![Twitter](https://img.shields.io/badge/Twitter-DataHive-blue)](https://x.com/getdatahive)
+[![Telegram](https://img.shields.io/badge/Telegram-DataHive-blue)](https://t.me/datahiveofficial)
+[![Quest](https://img.shields.io/badge/Quest-DataHive-blue)](https://quest.intract.io/project/datahive-h_lpnt)
+[![Email](https://img.shields.io/badge/Email-team@datahive.network-blue)](mailto:team@datahive.network)
 
 ## Overview of Legalese Node Tasks
 
